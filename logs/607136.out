@@ -1,0 +1,77 @@
+c016n02
+2024-12-03 13:46:57.834289: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-12-03 13:49:55.373247: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-03 13:50:27.736286: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-03 13:50:27.736398: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-12-03 14:04:40.075129: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-03 14:04:40.076295: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-03 14:04:40.076350: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-12-03 14:37:04.564310: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-03 14:37:04.582709: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2024-12-03 14:37:04.582878: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (c016n02): /proc/driver/nvidia/version does not exist
+2024-12-03 14:41:56.472199: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection 
+processing 1 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/305900_277500_result 
+Traceback (most recent call last):
+  File "inferenceStitch.py", line 531, in <module>
+    os.path.splitext(testnames[i])[0]+'_THRE_'+f'{tHRESHOLD:1.1f}'+sUFFIX[cAPTION]),
+TypeError: list indices must be integers or slices, not str
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c016n02>
+Subject: Job 607136: <#!/bin/bash;#BSUB -n 1;#BSUB -W 72:00;#BSUB -q serial;#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;#module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;#nvidia-smi;#nvcc --version;#python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"; python inferenceStitch.py> in cluster <Hazel> Exited
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 72:00;#BSUB -q serial;#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;#module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;#nvidia-smi;#nvcc --version;#python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"; python inferenceStitch.py> was submitted from host <login02> by user <regarry> in cluster <Hazel> at Tue Dec  3 13:33:26 2024
+Job was executed on host(s) <c016n02>, in queue <serial>, as user <regarry> in cluster <Hazel> at Tue Dec  3 13:33:26 2024
+</home/regarry> was used as the home directory.
+</share/lsmsmart/regarry/keras-retinanet> was used as the working directory.
+Started at Tue Dec  3 13:33:26 2024
+Terminated at Tue Dec  3 15:19:58 2024
+Results reported at Tue Dec  3 15:19:58 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 72:00
+#BSUB -q serial
+#BSUB -o ./logs/%J.out
+#BSUB -e ./logs/%J.out
+source ~/.bashrc
+source /usr/share/Modules/init/bash
+#module load cuda/12.0
+conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment
+#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet 
+hostname
+#nvidia-smi
+#nvcc --version
+#python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+python inferenceStitch.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   15209.00 sec.
+    Max Memory :                                 3 GB
+    Average Memory :                             0.86 GB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                137
+    Run time :                                   6410 sec.
+    Turnaround time :                            6392 sec.
+
+The output (if any) is above this job summary.
+

@@ -1,0 +1,106 @@
+Sender: LSF System <lsfadmin@gpu30>
+Subject: Job 509369: <#!/bin/bash;#BSUB -n 1;#BSUB -W 12:00;#BSUB -q gpu;#BSUB -R "select[l40s]";#BSUB -gpu "num=1:mode=exclusive_process:mps=no";#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;nvidia-smi;nvcc --version; python inferenceStitch.py> in cluster <Hazel> Exited
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 12:00;#BSUB -q gpu;#BSUB -R "select[l40s]";#BSUB -gpu "num=1:mode=exclusive_process:mps=no";#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;nvidia-smi;nvcc --version; python inferenceStitch.py> was submitted from host <login01> by user <regarry> in cluster <Hazel> at Tue Nov 19 13:12:02 2024
+Job was executed on host(s) <gpu30>, in queue <gpu>, as user <regarry> in cluster <Hazel> at Tue Nov 19 13:12:02 2024
+</home/regarry> was used as the home directory.
+</share/lsmsmart/regarry/keras-retinanet> was used as the working directory.
+Started at Tue Nov 19 13:12:02 2024
+Terminated at Tue Nov 19 13:14:13 2024
+Results reported at Tue Nov 19 13:14:13 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 12:00
+#BSUB -q gpu
+#BSUB -R "select[l40s]"
+#BSUB -gpu "num=1:mode=exclusive_process:mps=no"
+#BSUB -o ./logs/%J.out
+#BSUB -e ./logs/%J.out
+source ~/.bashrc
+source /usr/share/Modules/init/bash
+module load cuda/12.0
+conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment
+#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet 
+hostname
+nvidia-smi
+nvcc --version
+
+python inferenceStitch.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   9.00 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                8
+    Run time :                                   153 sec.
+    Turnaround time :                            131 sec.
+
+The output (if any) follows:
+
+gpu30
+Tue Nov 19 13:12:11 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40S                    On  | 00000000:17:00.0 Off |                    0 |
+| N/A   27C    P8              33W / 350W |      3MiB / 46068MiB |      0%   E. Process |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA L40S                    On  | 00000000:31:00.0 Off |                    0 |
+| N/A   27C    P8              32W / 350W |      3MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA L40S                    On  | 00000000:B1:00.0 Off |                    0 |
+| N/A   27C    P8              32W / 350W |      3MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA L40S                    On  | 00000000:CA:00.0 Off |                    0 |
+| N/A   27C    P8              34W / 350W |      3MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Mon_Oct_24_19:12:58_PDT_2022
+Cuda compilation tools, release 12.0, V12.0.76
+Build cuda_12.0.r12.0/compiler.31968024_0
+2024-11-19 13:12:40.222992: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-19 13:12:40.244212: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "inferenceStitch.py", line 9, in <module>
+    import keras
+  File "/home/regarry/.local/lib/python3.7/site-packages/keras/__init__.py", line 21, in <module>
+    from keras import models
+  File "/home/regarry/.local/lib/python3.7/site-packages/keras/models/__init__.py", line 18, in <module>
+    from keras.engine.functional import Functional
+  File "/home/regarry/.local/lib/python3.7/site-packages/keras/engine/functional.py", line 26, in <module>
+    from keras import backend
+  File "/home/regarry/.local/lib/python3.7/site-packages/keras/backend.py", line 32, in <module>
+    from keras import backend_config
+  File "/home/regarry/.local/lib/python3.7/site-packages/keras/backend_config.py", line 33, in <module>
+    @tf.__internal__.dispatch.add_dispatch_support
+AttributeError: module 'tensorflow.compat.v2' has no attribute '__internal__'

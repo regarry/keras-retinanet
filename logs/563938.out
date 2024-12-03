@@ -1,0 +1,151 @@
+gpu15
+Tue Nov 26 12:16:43 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40                     On  | 00000000:17:00.0 Off |                    0 |
+| N/A   24C    P0              79W / 300W |      4MiB / 46068MiB |      0%   E. Process |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA L40                     On  | 00000000:31:00.0 Off |                    0 |
+| N/A   23C    P8              22W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA L40                     On  | 00000000:B1:00.0 Off |                    0 |
+| N/A   23C    P8              22W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA L40                     On  | 00000000:CA:00.0 Off |                    0 |
+| N/A   22C    P8              21W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Mon_Oct_24_19:12:58_PDT_2022
+Cuda compilation tools, release 12.0, V12.0.76
+Build cuda_12.0.r12.0/compiler.31968024_0
+2024-11-26 12:16:47.289718: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-26 12:16:49.207905: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-26 12:16:49.646130: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:16:49.668367: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-11-26 12:17:01.863083: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:01.869157: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:01.869235: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-11-26 12:17:13.224163: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:13.227864: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:13.230433: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:13.231245: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:17.961627: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:17.962807: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:17.962864: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+[]
+2024-11-26 12:17:22.441069: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-26 12:17:22.569333: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-26 12:17:22.572913: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:22.572941: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-11-26 12:17:25.065086: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:25.065318: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:25.065354: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-11-26 12:17:29.411820: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:29.412034: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:29.412156: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:29.412271: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:29.448074: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:29.448181: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/apps/cuda/cuda-12.0/lib64:/usr/local/apps/cuda/cuda-12.0/lib64/stubs:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-11-26 12:17:29.448206: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-11-26 12:17:30.289067: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection 
+Traceback (most recent call last):
+  File "/usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: '/rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/NM_align/variables/z_displacement_align.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "inferenceStitch.py", line 353, in <module>
+    'z_displacement_align.mat'))['z_displacement_align'][markers[1]][0,0]
+  File "/usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 216, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 19, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: '/rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/NM_align/variables/z_displacement_align.mat'
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu15>
+Subject: Job 563938: <#!/bin/bash;#BSUB -n 1;#BSUB -W 12:00;#BSUB -q gpu;#BSUB -R "select[l40]";#BSUB -gpu "num=1:mode=exclusive_process:mps=no";#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;nvidia-smi;nvcc --version;python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"; python inferenceStitch.py> in cluster <Hazel> Exited
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 12:00;#BSUB -q gpu;#BSUB -R "select[l40]";#BSUB -gpu "num=1:mode=exclusive_process:mps=no";#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;nvidia-smi;nvcc --version;python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"; python inferenceStitch.py> was submitted from host <login03> by user <regarry> in cluster <Hazel> at Tue Nov 26 12:16:39 2024
+Job was executed on host(s) <gpu15>, in queue <gpu>, as user <regarry> in cluster <Hazel> at Tue Nov 26 12:16:40 2024
+</home/regarry> was used as the home directory.
+</share/lsmsmart/regarry/keras-retinanet> was used as the working directory.
+Started at Tue Nov 26 12:16:40 2024
+Terminated at Tue Nov 26 12:18:01 2024
+Results reported at Tue Nov 26 12:18:01 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 12:00
+#BSUB -q gpu
+#BSUB -R "select[l40]"
+#BSUB -gpu "num=1:mode=exclusive_process:mps=no"
+#BSUB -o ./logs/%J.out
+#BSUB -e ./logs/%J.out
+source ~/.bashrc
+source /usr/share/Modules/init/bash
+module load cuda/12.0
+conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment
+#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet 
+hostname
+nvidia-smi
+nvcc --version
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+python inferenceStitch.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   29.00 sec.
+    Max Memory :                                 1 GB
+    Average Memory :                             0.50 GB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                265
+    Run time :                                   76 sec.
+    Turnaround time :                            82 sec.
+
+The output (if any) is above this job summary.
+

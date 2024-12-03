@@ -19,6 +19,13 @@ For more information, check [here](https://github.com/fizyr/keras-retinanet/issu
 3) Alternatively, you can run the code directly from the cloned  repository, however you need to run `python setup.py build_ext --inplace` to compile Cython code first.
 4) Optionally, install `pycocotools` if you want to train / test on the MS COCO dataset by running `pip install --user git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI`.
 
+How I had to do it:
+```bash
+conda create -n keras-retinanet python=3.7
+conda activate keras-retinanet
+pip install tensorflow==2.3 keras=02.3
+```
+
 ## Testing
 An example of testing the network can be seen in [this Notebook](https://github.com/delftrobotics/keras-retinanet/blob/master/examples/ResNet50RetinaNet.ipynb).
 In general, inference of the network works as follows:
