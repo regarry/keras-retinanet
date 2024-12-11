@@ -1,0 +1,2 @@
+bsub -Is -n 8 -W 4:00 -R "rusage[mem=5GB]" -R "span[hosts=1]" bash
+downgrade vs code debugger extension to work with python 3.7

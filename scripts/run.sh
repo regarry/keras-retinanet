@@ -1,7 +1,8 @@
 #!/bin/bash
-#BSUB -n 1
+#BSUB -n 8
 #BSUB -W 72:00
-#BSUB -q serial
+#BSUB -R "rusage[mem=5GB]"
+#BSUB -R "span[hosts=1]"
 #BSUB -o ./logs/%J.out
 #BSUB -e ./logs/%J.out
 source ~/.bashrc

@@ -73,7 +73,7 @@ cHANNELS = {'488nm':'GFP', '561nm':'RFP'}
 
 tHRESHOLD = 0.5 # threshold for detection confidence score
 sAVEIMAGE = True # whether to export image with detection boxes
-cAPTION = True # whether to export image with label captions
+cAPTION = False # NOT WORKING RYAN 12-04-24 whether to export image with label captions
 sAVECSV = True # whether to export table of detections
 sTARTID = None; eNDID = None # start and end of tile indexes for prediction; if None, all tiles
 tiles = [] # list of selected tile indexes for prediction; if empty, sTARTID:eNDID
@@ -373,6 +373,7 @@ for p, pATHTEST in enumerate(pATHTILE):
                 os.mkdir(pATHRESULT_TILE)
             except OSError:
                 print ("Creation of the directory %s failed" % pATHRESULT_TILE)
+                continue # skip to the next tile if already done
             else:
                 print ("Successfully created the directory %s " % pATHRESULT_TILE)
         
@@ -662,7 +663,7 @@ if mERGEZ:
     CSV_mergez = os.path.join(pATHRESULT,'predictions_mergez.csv')
     counts_m = [0] * num_class
 
-# Load RetinaNet csv for predictions (multi-channel) and stitch predictions
+# Load RetinaNet csv for predictions (multi-channel) and stitch predictions (stuck here 12-6-24)
 for dir_name in dir_dict:
     print('Loading', dir_name, '...')
     tile_name = os.path.split(dir_name)[-1]

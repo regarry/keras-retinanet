@@ -1,0 +1,484 @@
+c021n01
+2024-12-04 10:06:13.548122: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-12-04 10:06:40.547376: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-04 10:06:46.565504: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-04 10:06:46.565596: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-12-04 10:09:53.701115: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-04 10:09:53.722211: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-04 10:09:53.722274: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-12-04 10:14:04.347343: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/regarry/.local/lib/python3.7/site-packages/cv2/../../lib64:/usr/local/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+2024-12-04 10:14:04.419476: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2024-12-04 10:14:04.419633: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (c021n01): /proc/driver/nvidia/version does not exist
+2024-12-04 10:15:00.490497: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /usr/local/usrapps/lsmsmart/regarry/retinanet/lib/python3.7/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
+Creation of the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection failed
+processing 1 of 45 tiles
+Creation of the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/305900_277500_result failed
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 1
+detected red astrocyte : 0
+Finished in:  1989.1782531738281
+processing 2 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/305900_288800_result 
+detected yellow neuron : 184
+detected yellow astrocyte : 20
+detected green neuron : 159
+detected green astrocyte : 5
+detected red neuron : 118
+detected red astrocyte : 7
+Finished in:  2325.046561717987
+processing 3 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/305900_300100_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  811.659750699997
+processing 4 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/305900_311400_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  68.08917999267578
+processing 5 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/305900_322700_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  116.74121475219727
+processing 6 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/317300_277500_result 
+detected yellow neuron : 1360
+detected yellow astrocyte : 58
+detected green neuron : 2171
+detected green astrocyte : 201
+detected red neuron : 2504
+detected red astrocyte : 219
+Finished in:  2683.0003945827484
+processing 7 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/317300_288800_result 
+detected yellow neuron : 5043
+detected yellow astrocyte : 385
+detected green neuron : 5646
+detected green astrocyte : 296
+detected red neuron : 6029
+detected red astrocyte : 415
+Finished in:  3205.5321984291077
+processing 8 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/317300_300100_result 
+detected yellow neuron : 5284
+detected yellow astrocyte : 300
+detected green neuron : 5750
+detected green astrocyte : 391
+detected red neuron : 4988
+detected red astrocyte : 344
+Finished in:  3084.996007204056
+processing 9 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/317300_311400_result 
+detected yellow neuron : 3063
+detected yellow astrocyte : 110
+detected green neuron : 3727
+detected green astrocyte : 211
+detected red neuron : 2722
+detected red astrocyte : 186
+Finished in:  2930.436506509781
+processing 10 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/317300_322700_result 
+detected yellow neuron : 162
+detected yellow astrocyte : 1
+detected green neuron : 345
+detected green astrocyte : 14
+detected red neuron : 277
+detected red astrocyte : 18
+Finished in:  153.07966375350952
+processing 11 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/328600_277500_result 
+detected yellow neuron : 2246
+detected yellow astrocyte : 18
+detected green neuron : 3893
+detected green astrocyte : 115
+detected red neuron : 3538
+detected red astrocyte : 145
+Finished in:  3264.2839784622192
+processing 12 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/328600_288800_result 
+detected yellow neuron : 461
+detected yellow astrocyte : 6
+detected green neuron : 15994
+detected green astrocyte : 662
+detected red neuron : 11477
+detected red astrocyte : 843
+Finished in:  3443.4948904514313
+processing 13 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/328600_300100_result 
+detected yellow neuron : 6271
+detected yellow astrocyte : 426
+detected green neuron : 8921
+detected green astrocyte : 492
+detected red neuron : 3959
+detected red astrocyte : 528
+Finished in:  3521.9661526679993
+processing 14 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/328600_311400_result 
+detected yellow neuron : 299
+detected yellow astrocyte : 20
+detected green neuron : 11564
+detected green astrocyte : 829
+detected red neuron : 3598
+detected red astrocyte : 996
+Finished in:  3147.2924020290375
+processing 15 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/328600_322700_result 
+detected yellow neuron : 2497
+detected yellow astrocyte : 383
+detected green neuron : 3376
+detected green astrocyte : 368
+detected red neuron : 1551
+detected red astrocyte : 411
+Finished in:  1993.1456806659698
+processing 16 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/339900_277500_result 
+detected yellow neuron : 2086
+detected yellow astrocyte : 62
+detected green neuron : 4744
+detected green astrocyte : 411
+detected red neuron : 4224
+detected red astrocyte : 418
+Finished in:  3237.260883808136
+processing 17 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/339900_288800_result 
+detected yellow neuron : 333
+detected yellow astrocyte : 18
+detected green neuron : 11817
+detected green astrocyte : 959
+detected red neuron : 6001
+detected red astrocyte : 590
+Finished in:  3627.924540042877
+processing 18 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/339900_300100_result 
+detected yellow neuron : 416
+detected yellow astrocyte : 30
+detected green neuron : 11495
+detected green astrocyte : 1132
+detected red neuron : 4484
+detected red astrocyte : 1206
+Finished in:  3603.512930870056
+processing 19 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/339900_311400_result 
+detected yellow neuron : 3991
+detected yellow astrocyte : 341
+detected green neuron : 9501
+detected green astrocyte : 473
+detected red neuron : 2732
+detected red astrocyte : 344
+Finished in:  3687.8831179142
+processing 20 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/339900_322700_result 
+detected yellow neuron : 4283
+detected yellow astrocyte : 273
+detected green neuron : 6431
+detected green astrocyte : 283
+detected red neuron : 1959
+detected red astrocyte : 317
+Finished in:  2650.7889926433563
+processing 21 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/351200_277500_result 
+detected yellow neuron : 184
+detected yellow astrocyte : 4
+detected green neuron : 7017
+detected green astrocyte : 1031
+detected red neuron : 5149
+detected red astrocyte : 807
+Finished in:  2990.9631073474884
+processing 22 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/351200_288800_result 
+detected yellow neuron : 1845
+detected yellow astrocyte : 103
+detected green neuron : 11301
+detected green astrocyte : 1389
+detected red neuron : 4942
+detected red astrocyte : 502
+Finished in:  3593.519710302353
+processing 23 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/351200_300100_result 
+detected yellow neuron : 4781
+detected yellow astrocyte : 746
+detected green neuron : 7553
+detected green astrocyte : 1049
+detected red neuron : 3196
+detected red astrocyte : 327
+Finished in:  3615.058437347412
+processing 24 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/351200_311400_result 
+detected yellow neuron : 2040
+detected yellow astrocyte : 349
+detected green neuron : 8219
+detected green astrocyte : 1268
+detected red neuron : 2565
+detected red astrocyte : 540
+Finished in:  3610.0349373817444
+processing 25 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/351200_322700_result 
+detected yellow neuron : 204
+detected yellow astrocyte : 10
+detected green neuron : 7650
+detected green astrocyte : 1230
+detected red neuron : 2153
+detected red astrocyte : 431
+Finished in:  2612.777278661728
+processing 26 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/362500_277500_result 
+detected yellow neuron : 62
+detected yellow astrocyte : 1
+detected green neuron : 3820
+detected green astrocyte : 261
+detected red neuron : 2794
+detected red astrocyte : 180
+Finished in:  2827.960864305496
+processing 27 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/362500_288800_result 
+detected yellow neuron : 204
+detected yellow astrocyte : 19
+detected green neuron : 8884
+detected green astrocyte : 1893
+detected red neuron : 4823
+detected red astrocyte : 1101
+Finished in:  3311.2067375183105
+processing 28 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/362500_300100_result 
+detected yellow neuron : 229
+detected yellow astrocyte : 19
+detected green neuron : 8521
+detected green astrocyte : 3548
+detected red neuron : 3799
+detected red astrocyte : 837
+Finished in:  3551.1718497276306
+processing 29 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/362500_311400_result 
+detected yellow neuron : 1976
+detected yellow astrocyte : 896
+detected green neuron : 2680
+detected green astrocyte : 1124
+detected red neuron : 652
+detected red astrocyte : 49
+Finished in:  3160.9974122047424
+processing 30 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/362500_322700_result 
+detected yellow neuron : 18
+detected yellow astrocyte : 6
+detected green neuron : 2286
+detected green astrocyte : 418
+detected red neuron : 1155
+detected red astrocyte : 218
+Finished in:  2106.9384236335754
+processing 31 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/373800_277500_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 2
+detected red astrocyte : 0
+Finished in:  1644.5128688812256
+processing 32 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/373800_288800_result 
+detected yellow neuron : 1197
+detected yellow astrocyte : 378
+detected green neuron : 2111
+detected green astrocyte : 823
+detected red neuron : 1281
+detected red astrocyte : 442
+Finished in:  2683.562873840332
+processing 33 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/373800_300100_result 
+detected yellow neuron : 3771
+detected yellow astrocyte : 1928
+detected green neuron : 3941
+detected green astrocyte : 1528
+detected red neuron : 1106
+detected red astrocyte : 173
+Finished in:  2930.0295135974884
+processing 34 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/373800_311400_result 
+detected yellow neuron : 2329
+detected yellow astrocyte : 734
+detected green neuron : 2965
+detected green astrocyte : 851
+detected red neuron : 719
+detected red astrocyte : 33
+Finished in:  2662.77343416214
+processing 35 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/373800_322700_result 
+detected yellow neuron : 1483
+detected yellow astrocyte : 118
+detected green neuron : 996
+detected green astrocyte : 49
+detected red neuron : 566
+detected red astrocyte : 41
+Finished in:  1009.135550737381
+processing 36 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/385200_277500_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  1625.5661125183105
+processing 37 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/385200_288800_result 
+detected yellow neuron : 1453
+detected yellow astrocyte : 1191
+detected green neuron : 1310
+detected green astrocyte : 671
+detected red neuron : 1034
+detected red astrocyte : 637
+Finished in:  2402.706345319748
+processing 38 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/385200_300100_result 
+detected yellow neuron : 3502
+detected yellow astrocyte : 1531
+detected green neuron : 3735
+detected green astrocyte : 1098
+detected red neuron : 2172
+detected red astrocyte : 559
+Finished in:  2437.922336578369
+processing 39 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/385200_311400_result 
+detected yellow neuron : 3066
+detected yellow astrocyte : 805
+detected green neuron : 2599
+detected green astrocyte : 474
+detected red neuron : 1799
+detected red astrocyte : 231
+Finished in:  2409.0284354686737
+processing 40 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/385200_322700_result 
+detected yellow neuron : 71
+detected yellow astrocyte : 2
+detected green neuron : 125
+detected green astrocyte : 23
+detected red neuron : 85
+detected red astrocyte : 8
+Finished in:  145.99196338653564
+processing 41 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/396500_277500_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  1606.3058836460114
+processing 42 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/396500_288800_result 
+detected yellow neuron : 633
+detected yellow astrocyte : 410
+detected green neuron : 620
+detected green astrocyte : 275
+detected red neuron : 527
+detected red astrocyte : 219
+Finished in:  1649.2817432880402
+processing 43 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/396500_300100_result 
+detected yellow neuron : 1833
+detected yellow astrocyte : 772
+detected green neuron : 897
+detected green astrocyte : 358
+detected red neuron : 765
+detected red astrocyte : 329
+Finished in:  1672.1486065387726
+processing 44 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/396500_311400_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 1
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  720.3504693508148
+processing 45 of 45 tiles
+Successfully created the directory /rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph/cell_detection/396500_322700_result 
+detected yellow neuron : 0
+detected yellow astrocyte : 0
+detected green neuron : 0
+detected green astrocyte : 0
+detected red neuron : 0
+detected red astrocyte : 0
+Finished in:  139.21518087387085
+Loading 305900/305900_277500 ...
+Loading 305900/305900_288800 ...
+Traceback (most recent call last):
+  File "inferenceStitch.py", line 679, in <module>
+    file_z0)
+  File "inferenceStitch.py", line 293, in combine_predictions
+    max(ABS_X,x_pre_start):min(ABS_X+tILESIZE,x_pre_start+tILESIZE)] = 1
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c021n01>
+Subject: Job 616684: <#!/bin/bash;#BSUB -n 1;#BSUB -W 72:00;#BSUB -q serial;#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;#module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;#nvidia-smi;#nvcc --version;#python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"; python inferenceStitch.py> in cluster <Hazel> Exited
+
+Job <#!/bin/bash;#BSUB -n 1;#BSUB -W 72:00;#BSUB -q serial;#BSUB -o ./logs/%J.out;#BSUB -e ./logs/%J.out;source ~/.bashrc;source /usr/share/Modules/init/bash;#module load cuda/12.0;conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment;#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet ;hostname;#nvidia-smi;#nvcc --version;#python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"; python inferenceStitch.py> was submitted from host <login03> by user <regarry> in cluster <Hazel> at Wed Dec  4 10:05:22 2024
+Job was executed on host(s) <c021n01>, in queue <serial>, as user <regarry> in cluster <Hazel> at Wed Dec  4 10:05:23 2024
+</home/regarry> was used as the home directory.
+</share/lsmsmart/regarry/keras-retinanet> was used as the working directory.
+Started at Wed Dec  4 10:05:23 2024
+Terminated at Thu Dec  5 15:54:22 2024
+Results reported at Thu Dec  5 15:54:22 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 72:00
+#BSUB -q serial
+#BSUB -o ./logs/%J.out
+#BSUB -e ./logs/%J.out
+source ~/.bashrc
+source /usr/share/Modules/init/bash
+#module load cuda/12.0
+conda activate /usr/local/usrapps/$GROUP/$USER/retinanet # enter the full path to the conda environment
+#conda activate /rsstu/users/t/tghashg/MADMbrains/Ryan/conda/unet 
+hostname
+#nvidia-smi
+#nvcc --version
+#python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+python inferenceStitch.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   819061.00 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.15 GB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                137
+    Run time :                                   107339 sec.
+    Turnaround time :                            107340 sec.
+
+The output (if any) is above this job summary.
+
