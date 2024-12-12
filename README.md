@@ -21,9 +21,10 @@ For more information, check [here](https://github.com/fizyr/keras-retinanet/issu
 
 How I had to do it:
 ```bash
-conda create -n keras-retinanet python=3.7
+conda create -n keras-retinanet python=3.7 -y
 conda activate keras-retinanet
-pip install tensorflow==2.3 keras=02.3
+pip install tensorflow==2.3 keras==2.3
+pip install -e .
 ```
 
 ## Testing

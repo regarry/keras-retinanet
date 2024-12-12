@@ -40,7 +40,7 @@ setup_gpu(gpu)
 # %% Load RetinaNet model
 
 # model_path = r'path/to/model.h5', e.g.
-model_path = os.path.join('snapshots', 
+model_path = os.path.join(os.getcwd(),'keras-retinanet', 'snapshots', 
                           'resnet50_csv_50_madm.h5')
 
 # load retinanet model
@@ -66,7 +66,8 @@ labels_to_names = {0: 'uncertain', 1: 'yellow neuron', 2: 'yellow astrocyte',
 #  |___channel 2 <-- contains TeraStitcher two-level hierarchy, aligned to channel 1
 
 # pATHDATA = 'path/to/dataset' e.g.
-pATHDATA = r'/rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph'
+#pATHDATA = r'/rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph'
+pATHDATA = os.path.join('X:','Ryan','11-07-2024','oc3-t10-tail-p5','numorph') 
 
 # cHANNELS = {'channel 1':'marker 1', 'channel 2':'marker 2', ...} e.g.
 cHANNELS = {'488nm':'GFP', '561nm':'RFP'}
@@ -677,7 +678,8 @@ for dir_name in dir_dict:
                                                        z_start, Z, 
                                                        dir_dict[dir_name], 
                                                        disp_mat_fin, (H,W), 
-                                                       file_z0)
+                                                       file_z0=file_z0) # def combine_predictions(all_predictions, csv_reader, classes, z_start, Z, pos, disp_mat, size, tILESIZE = 2048, file_z0 = None):
+ 
 
 # merge in z during stitching
 if mERGEZ:
@@ -702,7 +704,7 @@ if mERGEZ:
                             merge_predictions[i+1][l] = cleaned_comb_predictions[cleaned_comb_predictions[:,-1]==i+2]
             else:
                 for l in range(2):
-                    cleaned_detections = merge_predictions[i][label]
+                    cleaned_detections = merge_predictions[i][l]
                     if cleaned_predictions.size > 1:
                         cleaned_predictions_next = stitched_predictions[i+1][l]
                         if cleaned_predictions_next.size > 1:

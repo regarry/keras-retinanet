@@ -16,7 +16,6 @@ keras==2.11.0
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 keras-resnet==0.2.0
-keras-retinanet @ file:///gpfs_common/share02/lsmsmart/regarry/keras-retinanet
 libclang==18.1.1
 Markdown==3.4.4
 MarkupSafe==2.1.5
@@ -42,7 +41,7 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.11.0
 tensorflow-estimator==2.11.0
-tensorflow-io-gcs-filesystem==0.34.0
+#tensorflow-io-gcs-filesystem==0.34.0
 termcolor==2.3.0
 typing_extensions==4.7.1
 urllib3==2.0.7
