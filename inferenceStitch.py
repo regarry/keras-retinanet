@@ -40,7 +40,7 @@ setup_gpu(gpu)
 # %% Load RetinaNet model
 
 # model_path = r'path/to/model.h5', e.g.
-model_path = os.path.join(os.getcwd(),'keras-retinanet', 'snapshots', 
+model_path = os.path.join(os.getcwd(), 'snapshots', 
                           'resnet50_csv_50_madm.h5')
 
 # load retinanet model
@@ -67,7 +67,7 @@ labels_to_names = {0: 'uncertain', 1: 'yellow neuron', 2: 'yellow astrocyte',
 
 # pATHDATA = 'path/to/dataset' e.g.
 #pATHDATA = r'/rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph'
-pATHDATA = os.path.join('X:','Ryan','11-07-2024','oc3-t10-tail-p5','numorph') 
+pATHDATA = os.path.join('X:','Ryan','12-16-2024','OC3-T7-TAIL', 'numorph') #'numorph'
 
 # cHANNELS = {'channel 1':'marker 1', 'channel 2':'marker 2', ...} e.g.
 cHANNELS = {'488nm':'GFP', '561nm':'RFP'}
@@ -80,7 +80,7 @@ sTARTID = None; eNDID = None # start and end of tile indexes for prediction; if 
 tiles = [] # list of selected tile indexes for prediction; if empty, sTARTID:eNDID
 mERGEZTILE = False # whether to merge predictions across z for a single tile
 mERGEZ = True # whether to merge predictions across z during stitching
-rES = [[0.65, 0.65, 20]] # voxel size of the dataset
+rES = [[0.65, 0.65, 10]] # voxel size of the dataset
 tILESIZE = 2048 # size of a field of view (tile)
 xsize = 512; ysize = 512; step = 448 # size and step of image patches for detection
 
@@ -352,7 +352,6 @@ if sAVEIMAGE or sAVECSV:
 if aLIGNED == 'Table':
     z_align = loadmat(os.path.join(pATHDATA,'numorph_align','variables',
                                    'z_displacement_align.mat'))['z_displacement_align'][markers[1]][0,0]
-               
     xy_align = loadmat(os.path.join(pATHDATA,'numorph_align','variables',
                                    'translation_table.mat'))['translation_table'][markers[1]][0,0]
 
