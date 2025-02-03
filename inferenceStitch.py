@@ -67,14 +67,14 @@ labels_to_names = {0: 'uncertain', 1: 'yellow neuron', 2: 'yellow astrocyte',
 
 # pATHDATA = 'path/to/dataset' e.g.
 #pATHDATA = r'/rsstu/users/t/tghashg/MADMbrains/Ryan/11-07-2024/mahdi_first_p5/numorph'
-pATHDATA = os.path.join('X:','Ryan','12-16-2024','OC3-T7-TAIL', 'numorph') #'numorph'
+pATHDATA = os.path.join('X:','Ryan','Light_Sheet_Imaged_Brains','12-16-2024-OC3-T7-TAIL','OC3-T7-TAIL', 'numorph') #'numorph'
 
 # cHANNELS = {'channel 1':'marker 1', 'channel 2':'marker 2', ...} e.g.
 cHANNELS = {'488nm':'GFP', '561nm':'RFP'}
 
 tHRESHOLD = 0.5 # threshold for detection confidence score
-sAVEIMAGE = True # whether to export image with detection boxes
-cAPTION = False # NOT WORKING RYAN 12-04-24 whether to export image with label captions
+sAVEIMAGE = False # whether to export image with detection boxes
+cAPTION = False # NOT WORKING RYAN 12-04-24; whether to export image with label captions
 sAVECSV = True # whether to export table of detections
 sTARTID = None; eNDID = None # start and end of tile indexes for prediction; if None, all tiles
 tiles = [] # list of selected tile indexes for prediction; if empty, sTARTID:eNDID
@@ -367,6 +367,14 @@ for p, pATHTEST in enumerate(pATHTILE):
         if aLIGNED == 'Table':
             z_align_disp = z_align[dir_map[dir_name]]
             xy_align_disp = xy_align[dir_map[dir_name]]
+        
+        try:
+            os.mkdir(pATHRESULT_TILE)
+        except OSError:
+            print ("Creation of the directory %s failed" % pATHRESULT_TILE)
+            continue # skip to the next tile if already done
+        else:
+            print ("Successfully created the directory %s " % pATHRESULT_TILE)
         
         if sAVEIMAGE:
             try:
